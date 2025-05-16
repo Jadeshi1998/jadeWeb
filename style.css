@@ -90,7 +90,7 @@ a:hover {
   width: 100%;
   height: 2px;
   background-color: black;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links {
@@ -101,7 +101,7 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links a {
@@ -111,7 +111,7 @@ a:hover {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links li {
@@ -136,15 +136,9 @@ a:hover {
 
 .hamburger-icon span:first-child {
   transform: none;
-}
-
-.hamburger-icon span:first-child {
   opacity: 1;
 }
 
-.hamburger-icon span:first-child {
-  transform: none;
-}
 
 /* SECTIONS */
 
@@ -169,11 +163,19 @@ section {
   height: 80vh;
 }
 
-.section__pic-container {
-  display: flex;
+
+.profile_pic-container img{
+  transition: all 0.5s;
   height: 400px;
-  width: 400px;
-  margin: auto 0;
+  width: 330px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  }
+  
+.profile_pic-container:hover img{
+  height: 410px;
+  width: 340px;
+  border-radius: 40%;
 }
 
 .section__text {
@@ -306,12 +308,6 @@ section {
 .section-container {
   gap: 4rem;
   height: 80%;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
 }
 
 /* EXPERIENCE SECTION */
